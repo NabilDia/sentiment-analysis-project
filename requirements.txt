@@ -1,0 +1,15 @@
+# Manipulation de données
+pandas
+numpy
+
+# Visualisation
+matplotlib
+seaborn
+
+# Traitement du langage naturel (NLP)
+nltk
+spacy
+scikit-learn
+
+# Notebooks et interface
+jupyter
