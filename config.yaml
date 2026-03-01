@@ -1,0 +1,27 @@
+# ============================================================
+# Sentiment Analysis Project – Main Configuration
+# ============================================================
+
+paths:
+  data_raw: data/raw
+  data_processed: data/processed
+  models: models
+  logs: logs
+
+preprocessing:
+  language: english
+  remove_stopwords: true
+  lemmatize: true
+
+features:
+  method: tfidf           # tfidf | word2vec
+  tfidf_max_features: 5000
+  tfidf_ngram_range: [1, 2]
+  embedding_dim: 100      # used only for word2vec
+
+model:
+  type: logistic_regression   # logistic_regression | naive_bayes | svm | random_forest
+  test_size: 0.2
+  random_state: 42
+
+logging_config: logging_config.yaml

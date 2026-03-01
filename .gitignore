@@ -1,0 +1,85 @@
+# Fichiers Python compilés
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Environnements virtuels
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Notebooks Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Tests et couverture
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+htmlcov/
+
+# Données (ne pas committer les datasets bruts)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Modèles sauvegardés (binaires volumineux)
+models/*.pkl
+models/*.joblib
+models/*.h5
+models/*.pt
+!models/.gitkeep
+
+# Logs
+logs/*.log
+!logs/.gitkeep
+
+# Éditeurs et IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
