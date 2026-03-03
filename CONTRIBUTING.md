@@ -1,68 +1,68 @@
-# Contributing to Sentiment Analysis Project
+# Contribuer au projet d'Analyse de Sentiments
 
-Thank you for considering contributing to this project! 🎉
+Merci de vouloir contribuer à ce projet ! 🎉
 
-## How to Contribute
+## Comment contribuer
 
-### Reporting Bugs
-1. Check existing [issues](../../issues) first.
-2. Open a new issue with a clear title and description.
-3. Include a minimal reproducible example when possible.
+### Signaler un bug
+1. Vérifiez d'abord les [issues existantes](../../issues).
+2. Ouvrez une nouvelle issue avec un titre clair et une description précise.
+3. Fournissez un exemple minimal pour reproduire le problème si possible.
 
-### Suggesting Enhancements
-1. Open an issue with the label **enhancement**.
-2. Describe the use case and expected behaviour.
+### Proposer une amélioration
+1. Ouvrez une issue avec le label **enhancement**.
+2. Décrivez le cas d'usage et le comportement attendu.
 
-### Submitting Pull Requests
-1. Fork the repository and create your branch from `main`:
+### Soumettre une Pull Request
+1. Faites un fork du dépôt et créez votre branche depuis `main` :
    ```bash
-   git checkout -b feature/my-new-feature
+   git checkout -b feature/ma-nouvelle-fonctionnalite
    ```
-2. Install development dependencies:
+2. Installez les dépendances de développement :
    ```bash
    pip install -r requirements.txt
    pip install pytest pytest-cov
    ```
-3. Make your changes and write tests for them.
-4. Run the test suite:
+3. Apportez vos modifications et écrivez des tests.
+4. Lancez les tests :
    ```bash
    pytest tests/ -v
    ```
-5. Ensure all tests pass before submitting.
-6. Push to your fork and open a Pull Request.
+5. Vérifiez que tous les tests passent avant de soumettre.
+6. Poussez sur votre fork et ouvrez une Pull Request.
 
-## Code Style
-* Follow [PEP 8](https://pep8.org/).
-* Use descriptive variable names.
-* Add docstrings to all public classes and methods.
-* Keep functions small and focused.
+## Style de code
+* Respectez [PEP 8](https://pep8.org/).
+* Utilisez des noms de variables explicites.
+* Ajoutez des docstrings à toutes les classes et méthodes publiques.
+* Gardez les fonctions courtes et ciblées.
 
-## Commit Messages
-Use conventional commit style:
+## Messages de commit
+Utilisez le style de commit conventionnel :
 ```
-feat: add Word2Vec embedding support
-fix: handle empty string input in TextCleaner
-docs: update README with installation steps
-test: add unit tests for DataLoader
+feat: ajout du support Word2Vec
+fix: gestion des chaînes vides dans TextCleaner
+docs: mise à jour du README avec les étapes d'installation
+test: ajout de tests unitaires pour DataLoader
 ```
 
-## Project Structure
+## Structure du projet
 ```
 sentiment-analysis-project/
 ├── src/
-│   ├── config.py           # Central configuration
-│   ├── data/               # Data loading
-│   ├── preprocessing/      # Text cleaning
-│   ├── features/           # Feature extraction
-│   ├── models/             # ML models
-│   └── utils/              # Utilities (logging, …)
-├── tests/                  # Unit tests
-├── notebooks/              # Exploration notebooks
-├── data/                   # Raw & processed data
-├── models/                 # Saved models
-├── config.yaml             # Main config
-└── logging_config.yaml     # Logging config
+│   ├── config.py           # Configuration centrale
+│   ├── data/               # Chargement des données
+│   ├── preprocessing/      # Nettoyage du texte
+│   ├── features/           # Extraction de features
+│   ├── models/             # Modèles ML
+│   └── utils/              # Utilitaires (logs, …)
+├── tests/                  # Tests unitaires
+├── notebooks/              # Notebooks d'exploration
+├── data/                   # Données brutes et traitées
+├── models/                 # Modèles sauvegardés
+├── config.yaml             # Configuration principale
+└── logging_config.yaml     # Configuration des logs
 ```
 
-## Questions?
-Open an issue or start a discussion. We are happy to help!
+## Questions ?
+Ouvrez une issue ou démarrez une discussion. Nous sommes là pour aider !
