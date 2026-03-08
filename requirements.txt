@@ -12,4 +12,7 @@ spacy
 scikit-learn
 
 # Notebooks et interface
-jupyter
+jupyter 
+
+# Jeux de données
+datasets
