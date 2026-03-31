@@ -5,6 +5,7 @@ numpy
 # Visualisation
 matplotlib
 seaborn
+openpyxl
 
 # Traitement du langage naturel (NLP)
 nltk
@@ -12,7 +13,12 @@ spacy
 scikit-learn
 
 # Notebooks et interface
-jupyter 
+jupyter
+pytest
 
 # Jeux de données
 datasets
+
+# Utilitaires supplémentaires
+ipython
+debugpy

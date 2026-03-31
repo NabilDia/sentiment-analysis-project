@@ -2,6 +2,7 @@ import pandas as pd
 import os
 from datasets import load_dataset
 
+
 # Création du dossier data
 data_dir = os.path.join(os.path.dirname(__file__), '..', 'data')
 os.makedirs(data_dir, exist_ok=True)
@@ -28,6 +29,12 @@ try:
     df_sample.to_csv(output_path, index=False)
     
     print(f" Données sauvegardées dans : {output_path}")
+
+    # Sauvegarde en Excel
+    excel_path = os.path.join(data_dir, "reviews_formate.xlsx")
+    df_sample.to_excel(excel_path, index=False)
+    print(f" Excel sauvegardé : {excel_path}")
+    
     
 except Exception as e:
     print(f" Erreur : {e}")
@@ -35,4 +42,4 @@ except Exception as e:
 
 
 
-# df.to_excel('reviews_formaté.xlsx', index=False)
+#
